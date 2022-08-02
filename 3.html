@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>하고 싶은 말</title>
+    <style>
+    a{
+      color: black;
+      text-decoration: none;
+    }
+    h1{
+      border-bottom: gray solid 1px;
+      margin: 0;
+      text-align: center;
+      padding-bottom:10px;
+    }
+    #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #grid ol{
+      padding-left: 10px;
+      border-right: solid gray 1px;
+      margin: 0;
+      height: 1000px;
+    }
+    #grid ol h2{
+      text-align:left;
+    }
+    #grid h2{
+      text-align: center;
+    }
+    p{
+      text-align: center;
+      font-size: 60px;
+    }
+    </style>
+  </head>
+
+  <body>
+  <h1>선주와 민성의 첫 홈페이지</h1>
+  <div id="grid">
+    <ol>
+      <h2>목차</h2>
+      <li><a href="index.html">홈</a></li>
+      <li><a href="1.html">선주 사전</a></li>
+      <li><a href="2.html">민성 사전</a></li>
+      <li><a href="3.html">하고 싶은 말</a></li>
+    </ol>
+    <div id="article">
+      <h2>하고 싶은 말</h2>
+      <p>
+        선주야 내가 속 안썩이고 평생 사랑해줄게용 ㅎㅎ
+      </p>
+      <p>
+        <div id="disqus_thread"></div>
+        <script>
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://web1-azeiid73dr.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      </p>
+    </div>
+  </div>
+  </body>
+</html>
